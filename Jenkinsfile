@@ -11,12 +11,12 @@ pipeline {
             steps {
                 sh 'mvn clean package'
             }
-            post {
-                success {
-                    echo 'Now Archiving ...'
-                    // archiveArtifacts artifacts: '**/*.war'
-                }
-            }
+            // post {
+            //     success {
+            //         echo 'Now Archiving ...'
+            //         archiveArtifacts artifacts: '**/*.war'
+            //     }
+            // }
         }
     }
 }
